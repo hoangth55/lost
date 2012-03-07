@@ -5,9 +5,610 @@
 	{% if user.username %}
 		<p>Welcome {{ user.username }}!
 			Here you can store and share bookmarks!</p>
-	{% else %}
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+            <!-- saved from url=(0032)http://www.edmodo.com/library/v2 -->
+            <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            
+                <meta name="robots" content="noindex, nofollow, noarchive">
+                <meta name="keywords" content="microblogging, education 2.0, private groups, twitter, classroom 2.0, communication, parents, messaging, tools, students">
+                <meta name="description" content="Edmodo provides a safe and easy way for your class to connect and collaborate, share content, and access homework, grades and school notices. Our goal is to help educators harness the power of social media to customize the classroom for each and every learner">
+                <meta http-equiv="imagetoolbar" content="no">
+                <meta http-equiv="imagetoolbar" content="false">
+            
+                <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+                <title>Edmodo | Library</title>
+                <link rel="shortcut icon" href="http://www.edmodo.com/favicon.ico">
+                <link rel="stylesheet" type="text/css" href="/site_media/general-v2.css">
+                <link rel="stylesheet" type="text/css" href="/site_media/jquery.facebox.css">
+            
+                <link href="/site_media/resources.min.css" media="screen" rel="stylesheet" type="text/css">
+                <link href="/site_media/jquery.MultiFile.css" media="screen" rel="stylesheet" type="text/css">
+                <link href="/site_media/library-v2.max.css" media="screen" rel="stylesheet" type="text/css">
+                <script type="text/javascript" async="" src="/site_media/ga.js"></script><script type="text/javascript" src="/site_media/jquery.min.js"></script>
+                <script type="text/javascript" src="/site_media/general.js"></script>
+                <script type="text/javascript" src="/site_media/general-v2.js"></script>
+                <script type="text/javascript" src="/site_media/jquery.facebox.js"></script>
+            
+            
+                <link rel="stylesheet" type="text/css" href="/site_media/core.min.css"><script type="text/javascript" src="/site_media/core.min.js"></script>            <script type="text/javascript">
+                    //------------------------------------------------------
+                    // GLOBAL VARIABLES...
+                    var logged_in = true, user_id =  5639454, user_type = "STUDENT", user_name = 'Hoang Truong',
+                            modo=modo||{}; modo.config=modo.config||{}; modo.config.gdocs=modo.config.gdocs||{};
+                    modo.config.gdocs.FEATURE_ENABLED=0;
+            
+                    var GROUP='group';
+                    var ASSIGNMENT='assignment';
+                    var EDMODO_COLOR='#336699';
+                    var SUPPORT_COLOR='#CC3333';
+                    var EVERYONE_COLOR='#3265B0';
+                    var PATH2_IMAGES='http://images.edmodo.com/images/';
+                    var FILES_SERVER='http://s3.amazonaws.com';
+                    var EDMODO_FILES_SERVER='http://s3.amazonaws.com/edmodo/';
+                    var AVATAR_SERVER='http://s3.amazonaws.com/edmodo.userphotos/';
+                    var NEW_AVATAR_SERVER='http://u.ph.edim.co/';
+                    var DOC_THUMBS_PATH='http://s3.amazonaws.com/edmodo/docs/';
+                    var UNIFIED_POST_TYPES='1';
+                    var JS_DEV_STATE='2';
+                    var REV='36473';
+                    var MAX_SHOWN_FILENAME_LENGTH='50';
+                    var IS_INST_SUBDOMAIN='';
+                    var URL_KEY='library-v2';
+                    var MAX_CHAR_LENGTH_FOR_MESSAGES='587';
+                    var MAX_LINE_BREAKS_FOR_MESSAGES='8';
+                    var MAX_RECEIVERS_TO_SHOW='3';
+                    var CROCODOC_FLOOR='0';
+                    var CHAT_FEATURE='0';
+                    var BROWSER_NAME='Chrome';
+                    var BROWSER_NAME_VERSION='Chrome Generic';
+                    var QUIZZES_ENABLED='1';
+                    var EDMODO_SYSTEM_USER_ID='9';
+            
+                    translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['no_search_results'] = "There were no search results.";translated_text['searchAllTeachers'] = "Search All Teachers";translated_text['latest_posts'] = "Latest Posts";translated_text['search_posts'] = "Search Posts";translated_text['search-for-teachers'] = "Search Teachers";translated_text['COMMUNITY'] = "Community";translated_text['TEACHER'] = "Teacher";translated_text['STUDENT'] = "Student";translated_text['PUBLISHER'] = "Publisher";translated_text['PARENT'] = "Parent";translated_text['ADMINISTRATOR'] = "Administrator";translated_text['search'] = "Search";translated_text['school-code-no-colon'] = "School Code";translated_text['archived-groups'] = "Archived Groups";translated_text['noGdocs'] = "No Google Docs to display.";translated_text['docsCollections'] = "Docs Collections";translated_text['sharedBy'] = "Shared by";translated_text['postAttachments'] = "Post Attachments";translated_text['empFolderMsg'] = "Add files and links to this folder from your %1$s or %2$s";translated_text['empFolderMsgPub'] = "Add files and links to this folder from your %1$s";translated_text['onlyShowSentByMe'] = "Only show attachments sent by Me";translated_text['new'] = "New";translated_text['play'] = "Play";translated_text['show-all'] = "Show all";translated_text['lib-selection-instructions'] = "Select items on the left to show information about them here.";translated_text['selected_items'] = "%1$s Selected Items";translated_text['play_view'] = "Play View";translated_text['dnd_hint'] = "Hint: Drag-n-drop items to reorder them within a folder.";translated_text['favs_info'] = "Favorites display on your Profile, so you can share your best resources with other teachers.";translated_text['folder'] = "Folder";translated_text['apply'] = "Apply";translated_text['public'] = "Public";translated_text['folder_sharing'] = "Folder Sharing";translated_text['share_folder_w'] = "Share this folder with:";translated_text['create-folder'] = "Create a Folder";translated_text['folder-name'] = "Folder Name";translated_text['all-types'] = "All Types";translated_text['all-groups'] = "All Groups";translated_text['manage-folder'] = "Manage Folder";translated_text['folderUpdated'] = "Folder Updated";translated_text['remove-from-folder'] = "Remove from Folder";translated_text['delete-resources-prompt'] = "Are you sure you want to delete the selected resources?";translated_text['delete-resource'] = "Delete Resource";translated_text['delete-folder'] = "Delete Folder";translated_text['folder-settings'] = "Folder Settings";translated_text['file-added'] = "File Added";translated_text['link-added'] = "Link Added";translated_text['new-folder'] = "New Folder...";translated_text['launch-website'] = "Launch Web Site";translated_text['share-with-groups'] = "Share with groups:";translated_text['turned-in'] = "Turned In";translated_text['editName'] = "Edit Name";translated_text['edit'] = "Edit";translated_text['duplicate-names'] = "You cannot have duplicate names for folders.";translated_text['view'] = "View";translated_text['download'] = "Download";translated_text['delete-folder-prompt'] = "Are you sure you want to delete this folder?";translated_text['yes'] = "Yes";translated_text['no'] = "No";translated_text['settings'] = "Settings";translated_text['add'] = "Add";translated_text['create'] = "Create";translated_text['save'] = "Save";translated_text['must-select-upload'] = "You must select a file to upload.";translated_text['url-or-embed-instruction'] = "http:\/\/ or <embed>";translated_text['http-or-embed-required'] = "A URL or Embed code is required.";translated_text['description-of-webpage'] = "Short description of the web page.";translated_text['description-required'] = "A short description is required.";translated_text['enter-folder-name'] = "Please enter a folder name.";translated_text['add-to-folder'] = "Add to Folder";translated_text['add-to-library'] = "Add to Library";translated_text['no-archived-resources'] = "There are no archived resources.";translated_text['no-search-results'] = "Search did not find anything.";translated_text['library'] = "Library";translated_text['filters'] = "Filters";translated_text['tags'] = "Tags";translated_text['saved-assignments'] = "Saved Assignments";translated_text['all-authors'] = "Everything";translated_text['me'] = "Me";translated_text['direct'] = "Direct";translated_text['teachers'] = "Teachers";translated_text['students'] = "Students";translated_text['select'] = "Select";translated_text['all'] = "All";translated_text['none'] = "None";translated_text['group'] = "Group";translated_text['type'] = "Type";translated_text['folders'] = "Folders";translated_text['no-folders'] = "You have no folders.";translated_text['search-folders'] = "Search Folders";translated_text['files'] = "Files";translated_text['links'] = "Links";translated_text['polls'] = "Polls";translated_text['archived'] = "Archived";translated_text['link'] = "Link";translated_text['manage'] = "Manage";translated_text['post-sent'] = "The post has been sent.";translated_text['error-sending-multi-links'] = "Only one link can be sent at a time.";translated_text['error-no-links-and-files'] = "Links and files can not be sent at the same time.";translated_text['error-no-resources-selected'] = "You must have resources selected.";translated_text['error-no-description'] = "You must enter a description.";translated_text['error-no-receivers'] = "You must select people or groups to receive these resources.";translated_text['enter-description-here'] = "Enter description here";translated_text['send'] = "Send";translated_text['archive'] = "Archive";translated_text['delete'] = "Delete";translated_text['file'] = "File";translated_text['item'] = "Item";translated_text['groups'] = "Groups";translated_text['date'] = "Date";translated_text['close'] = "Close";translated_text['more'] = "more";translated_text['less'] = "less";translated_text['loading'] = "Loading";
+                    if( !readCookie('ignoredHostChk') && URL_KEY != 'index-ie6' && getInternetExplorerVersion() == 6 )            document.location = '/index/ie6';
+            
+                    $j(function(){
+                                $j('a[rel*=facebox]').facebox(                    {
+                                    faceboxHtml: '<div id="facebox" style="display:none;"><div class="popup"><table><tbody><tr><td class="tl"/><td class="b"/><td class="tr"/></tr><tr><td class="bSide"/><td class="body"><div class="header"><span class="title">Title</span><a href="#" class="close">X</a><div class="clear" style="height:0px;"></div></div><div class="content"></div></td><td class="bSide"/></tr><tr><td class="bl"/><td class="b"/><td class="br"/></tr></tbody></table></div></div>',
+                                    opacity : '0.75',
+                                    loadingImage : PATH2_IMAGES + 'loading.gif'
+                                    //closeImage   : PATH2_IMAGES + 'facebox/closelabel.gif'
+                                });                $j('#grades-toggle').click(function()
+                                {
+                                    $j('li.grades > div').toggleClass('clicked');
+                                    $j('#grades-list').toggle();
+                                });
+                                $j(document).click(function(e){
+                                    var target = $j(e.target);
+                                    if ( !(target.attr('id') == 'grades-list' || target.attr('id') == 'grades-toggle' ) )
+                                    {
+                                        $j('li.grades > div').removeClass('clicked');
+                                        $j('#grades-list').hide();
+                                    }
+                                });
+                                $j('#display-archived-groups-for-gradebook').click(function(){
+                                    $j.facebox( $j('#archived-group-list_tpl').html() );
+                                    $j.facebox.setTitle( translated_text['archived-groups'] );
+                                });
+                            }
+                    );
+                </script>
+                <script type="text/javascript" src="/site_media/resources.min-14157.js"></script>
+                <script type="text/javascript">
+                    //<!--
+                    // RESOURCES-PACKAGE
+            
+                    var lang = 'en', modo=modo||{};
+                    modo.config=modo.config||{};modo.config.gdocs=modo.config.gdocs||{};
+                    modo.classes=modo.classes||{};modo.classes.lib=modo.classes.lib||{};
+            
+                    translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['gdocs'] = "Google Docs";translated_text['authGdocs'] = "Connect with Google Docs";translated_text['dup_fav_folder_err'] = "A folder cannot be named \"Favorites\".";translated_text['remove_f_folder_conf'] = "Are you sure you would like to remove these resources?";translated_text['emp_added2lib'] = "Add links and files so you can access them from anywhere.";translated_text['emp_backpack'] = "Add links and files so you can access them from anywhere.";translated_text['emp_folder'] = "There are currently no resources in this folder.";translated_text['remove_from_favorites'] = "Remove from Favorites";translated_text['set_featured'] = "Set as Featured";translated_text['featured'] = "Featured";translated_text['preview'] = "Preview";translated_text['added'] = "Added";translated_text['post_attachments'] = "Attached to Posts";translated_text['added_by_me'] = "Library";translated_text['sent_by_me'] = "Sent by Me";translated_text['my_folders'] = "My Folders";translated_text['shared_w_me'] = "Shared with Me";translated_text['add2bp'] = "Add to Backpack";translated_text['backpack'] = "Backpack";translated_text['favorites'] = "Favorites";translated_text['latest'] = "Latest";translated_text['title_of_page'] = "Title of the web page.";translated_text['add_file'] = "Add a file (100MB max)";translated_text['replacement_file'] = "a replacement file";translated_text['desc_lbl'] = "Description (200 characters max)";translated_text['remove'] = "Remove";translated_text['current_thumbnail'] = "current thumbnail";translated_text['thumbnail'] = "Thumbnail";translated_text['url_or'] = "URL or";translated_text['url_of_thumbnail'] = "URL of thumbnail";translated_text['search-library'] = "Search Library";translated_text['search-collection'] = "Search Collection";translated_text['suggestions'] = "Suggestions";translated_text['view'] = "View";translated_text['launch-website'] = "Launch Web Site";translated_text['download'] = "Download";translated_text['post-to-groups'] = "Post to Groups...";translated_text['add-to-library'] = "Add to Library";translated_text['library'] = "Library";translated_text['no-resources'] = "Files and Links sent to you or any of your groups will be accessible here.";translated_text['no_favs'] = "You currently have no favorites.";translated_text['script-tags-err'] = "Script embed codes are not supported";translated_text['please-wait'] = "please wait...";translated_text['res-no-search-results'] = "Search did not find anything.";translated_text['all-types'] = "All Types";translated_text['all-groups'] = "All Groups";translated_text['shared'] = "Shared";translated_text['all-authors'] = "Everything";translated_text['me'] = "Me";translated_text['direct'] = "Direct";translated_text['teachers'] = "Teachers";translated_text['students'] = "Students";translated_text['attach'] = "Attach";translated_text['select'] = "Select";translated_text['all'] = "All";translated_text['none'] = "None";translated_text['group'] = "Group";translated_text['type'] = "Type";translated_text['folders'] = "Folders";translated_text['no-folders'] = "You have no folders.";translated_text['files'] = "Files";translated_text['links'] = "Links";translated_text['more'] = "more";translated_text['search'] = "Search";translated_text['loading'] = "Loading";        //-->
+                </script>
+                <script type="text/javascript" src="/site_media/resource_editing.min-14157.js"></script>
+                <script type="text/javascript" src="/site_media/jquery.MultiFile.js"></script>
+                <script type="text/javascript" src="/site_media/jquery.elastic.js"></script>
+                <script type="text/javascript" src="/site_media/ui.core.js"></script>
+                <script type="text/javascript" src="/site_media/library-v2.min-14157.js"></script>
+                <script type="text/javascript">
+                    //<!--
+                    var modo=modo||{},editor_ids=[1,1001913,1072934,1061216,1061949,1061927,1059807,1100897,1062473,1452025,1059063,1420768,1060559,1061625],groups=[{"gID":"843245","title":"Software Engineering K55-UET","hex":"#336699","creator_id":"4475139"}],list_view = 1,folders={users:[],shared:[]},lang = 'en',DOCS_EDITABLE=1;
+            
+                    modo.data=modo.data||{}, modo.data.gCollections = [];
+                    modo.config=modo.config||{}; modo.classes=modo.classes||{};
+                    modo.config.gdocs=modo.config.gdocs||{}
+                    modo.classes.lib={gdAuthURI:'https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=google_docs_id&redirect_uri=http%3A%2F%2Fwww.edmodo.com%2Flibrary%2Fv2&scope=https%3A%2F%2Fdocs.google.com%2Ffeeds%2F&access_type=offline'};
+                    modo.config.gdocs.ENABLED=0;
+                    modo.config.gdocs.RTOKEN='';
+            
+                    //-->
+                </script>
+                <script type="text/javascript">
+                    //<!--
+                    // SOME OTHER STUFF
+            
+                    translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['yes'] = "Yes";translated_text['no'] = "No";translated_text['more'] = "more";translated_text['less'] = "less";    translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['no-search-results'] = "Search did not find anything.";translated_text['wrong-extension'] = "You cannot select a $ext file. Try again...";translated_text['file-selected'] = "File selected: $file";translated_text['file-duplicated'] = "This file has already been selected: $file";translated_text['upload'] = "Upload";translated_text['to'] = "to";translated_text['single-date'] = "Single Date";translated_text['date-range'] = "Date Range";translated_text['date-format-err'] = "Date format should be MM\/DD\/YYYY.";translated_text['no-date-err'] = "No date selected.";translated_text['date-range-err'] = "Start date must be before end date.";    //-->
+                </script>
+            
+            
+                <script type="text/javascript">//<!--
+                //var possible_receivers = possible_receivers || []; // Default if possible-receivers isn't set.
+            
+                $j(function(){
+                    var search_form_j, search_field_j, search_dd, createElement, ANCHOR, defaults;
+            
+                    // Setup search-field/widget::
+                    search_field_j = $j('#navSearch') // Attach search drop-down on search-field click event.
+                            .bind('click keyup focus', function(){
+                                if( !search_dd )
+                                {
+                                    createElement = modo.elements.createElement;
+                                    ANCHOR        = modo.elements.A;
+            
+                                    search_dd = modo.controls.searchBox( search_field_j );
+            
+                                    //search_dd.conf.defaults = modo.search_defaults; 
+                                    search_dd.init();
+                                    search_dd.jq.insertAfter( search_form_j );
+                                }
+                            });
+                    search_form_j = $j('#search-form') // Kill form default-behavour.
+                            .submit(function() {
+                                //view.feed_handler.filterBySearch(search_field_j.val());
+                                return false;
+                            });
+                });
+                //--></script>
+                <!-- GA code -->
+                <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-176270-4']);
+                    _gaq.push(['_setDomainName', 'edmodo.com']);
+                    _gaq.push(['_trackPageview']);
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+                </script>
+                <!-- END GA code -->
+                <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><meta name="change_sink.js"><script type="text/javascript" src="/site_media/g.js"></script></head>
+            <body class="lang-en lib ut-STUD">
+            
+            
+            <a class="skipper" href="http://www.edmodo.com/library/v2#skipMainNav">Skip main navigation.</a>    <div id="nav">
+                <div id="navWrap">
+            
+                    <input type="hidden" value="http://u.ph.edim.co/default-avatars/default_avatar_t.png" id="account-avatar">
+            
+                    <a id="logo" href="http://www.edmodo.com/home">Edmodo</a>
+            
+            
+                    <div class="navLt lib"><span class="search"><div class="cap-1"></div><input type="text"><div class="cap-2"><div class="reset-search-btn" style="display: none; ">X</div></div></span>
+                        <form id="search-form" autocomplete="off">
+                            <input id="navSearch" class="eIcon eIconSearchNav clearInput search" value="Search">
+                        </form>
+            
+            
+            
+            
+                        <a href="http://www.edmodo.com/calendar/v2">Calendar</a>
+                                                    
+                                        
+                                                                        <span class="submenu grades">
+                                    <a href="http://www.edmodo.com/library/v2#" class="txt navArw">Grades</a>
+                                    <a class="navArw">&nbsp;</a>
+                                    <ul class="dropdown">
+            
+            
+            
+                                        <li>
+                                            <p style="background:#336699"></p>
+                                            <a href="http://www.edmodo.com/grades?gid=843245">Software Engineering K55-UET</a>
+                                        </li>
+            
+                                    </ul>
+                                </span>
+            
+            
+            
+                        <a href="/">Library</a>
+            
+            
+            
+                    </div>                        <div class="navRt">
+                    <a href="/">Home</a>
+            
+                    <!a href="http://www.edmodo.com/user?uid=5639454" class="txt">Profile</a>
+                                            
+                                            
+                            
+                            <span class="submenu">
+                                <a href="" class="txt navArw">Account</a>
+                                <a class="navArw">&nbsp;</a>
+                                <ul class="dropdown dropdownName">
+            
+                                    <li class="account-settings">
+                                        <a href="http://www.edmodo.com/settings">Settings</a>
+                                    </li>
+                                    <li class="account-help">
+                                        <a href="http://help.edmodo.com/?subdomain=www">Help</a>
+                                    </li>
+                                    <li class="account-logout">
+                                        <a href="/logout">Logout</a>
+                                    </li>
+                                </ul>            
+                            </span>
+            
+                </div>
+            
+            
+                </div>     </div>
+            
+            
+            <div id="content" class="clearfix">
+            
+                <script type="text/javascript">
+            
+                    //Detect IE7 Compatibility mode in IE8
+            
+                    var regx = /MSIE 7.0/;
+            
+                    if(regx.test(navigator.userAgent) && document.documentMode){
+            
+                        if(document.documentMode == 8) $j('#content').addClass('ie8-compatibility');
+            
+                    }
+            
+                </script>
+            
+            
+                <a name="skipMainNav"></a>
+                <div id="lib" class="clearfix"><div class="tools-wrapper"><div class="tools"></div></div><div class="loading-msg" style="display: none; "><span>Loading...</span></div><div class="res-wrap"><div class="col-1"><div class="resources AuthorshipPanel"><input type="button" class="add-library-btn" value="Add to Backpack"><input type="button" class="add2folder" value="Add to Backpack"><a class="me on">Backpack<div class="bot"></div></a><a class="all">Attached to Posts<div class="bot"></div></a><a class="me-posts">Sent by Me<div class="bot"></div></a><a class="turnin">Turned In<div class="bot"></div></a><a class="direct">Direct<div class="bot"></div></a></div><div class="containers_01 Panel2 resources FolderPanel FoldersPanel2"><div class="header"><h3>Folders</h3><a class="add-folder-btn">New</a></div><div class="panel"><div class="containers_01 ListBox controls SelectList LimitedSelectList" style=""><div class="emtpy" style="">You have no folders.</div><div class="list"></div><img class="listbox-pin-wheel" src="/site_media/loading.gif" style="display: none; "></div></div></div></div><div class="modo resources ResourcesView list at-ME"><div class="header bgGrad"><div class="title">Backpack</div><input class="title"><a class="cancel eIcon eIconCancel"></a><a class="submit eIcon eIconCheck"></a><a class="view-tggl"></a><div class="controls DropDown gCollectionsDd" style="position: relative; "><div class="DropDown-h" tabindex="0"><div>Docs Collections</div></div><div class="arrow"></div><div class="containers_01 ListBox controls SelectList" style="height: auto; left: 0px; position: absolute; display: none; "><div class="emtpy" style=""></div><div class="list"></div><img class="listbox-pin-wheel" src="/site_media/loading.gif" style="display: none; "></div></div><div class="controls DropDown type-dd" style="position: relative; "><div class="DropDown-h" tabindex="0"><div>All Types</div></div><div class="arrow"></div><div class="containers_01 ListBox controls SelectList" style="height: auto; left: 0px; width: 82px; position: absolute; display: none; top: 18px; background-position: 0px -18px; "><div class="emtpy" style="display: none; "></div><div class="list"><div class="Selectable containers_01 SelectableItem">All Types</div><div class="Selectable containers_01 SelectableItem">File</div><div class="Selectable containers_01 SelectableItem">Link</div></div><img class="listbox-pin-wheel" src="/site_media/loading.gif" style="display: none; "></div></div><div class="select-menu">Select: <a>All</a><a>None</a></div></div><div></div><div class="favInfo">Favorites display on your Profile, so you can share your best resources with other teachers.</div><div class="row2"><div class="controls DropDown group-filter-dd" style="position: relative; display: none; "><div class="DropDown-h" tabindex="0" style=""><div>All Groups</div></div><div class="arrow"></div><div class="containers_01 ListBox controls SelectList" style="height: auto; left: 0px; position: absolute; display: none; "><div class="emtpy" style="display: none; "></div><div class="list"><div class="Selectable resources GroupLbl all"><div class="color" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; "></div><div class="lbl">All Groups</div></div><div class="Selectable resources GroupLbl"><div class="color" style="background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(51, 102, 153); background-position: initial initial; background-repeat: initial initial; "></div><div class="lbl">Software Engineering K55-UET</div></div></div><img class="listbox-pin-wheel" src="/site_media/loading.gif" style="display: none; "></div></div><a class="sentByMe">Only show attachments sent by Me</a></div><div class="view"><div class="containers_01 ListBox controls SelectList resources ThumbsSelection small"><div class="emtpy" style="display: none; "><a class="addToLib eBtn Lg">Add to Backpack</a><div class="msg">Add links and files so you can access them from anywhere.</div></div><div class="list ui-sortable ui-sortable-disabled"><div class="resources ItemBox link" id="resource_item_20230232"><input class="data" value="" type="hidden" style="display:none"><div class="thumb"><a target="_blank" href="http://www.edmodo.com/link?id=7956061&url=http%3A//dantri.com.vn"></a><img src="/site_media/xino.php"></div><div id="resource_info" class="resource-info"><div class="title">Báo điện tử của TW Hội Khuyến Học Việt Nam - Diễn đàn Dân Trí Việt Nam</div><a class="title" target="_blank" href="http://www.edmodo.com/link?id=7956061&url=http%3A//dantri.com.vn">Báo điện tử của TW Hội Khuyến Học Việt Nam - Diễn đàn Dân Trí Việt Nam</a><a class="url" target="_blank" href="http://www.edmodo.com/link?id=7956061&url=http%3A//dantri.com.vn">http://dantri.com.vn</a><div class="desc display">Hà Nội "thúc" tiến độ xây dựng hàng loạt bãi xe (Dân trí) - Ngày 5/3, UBND Hà Nội có văn bản "thúc" Sở Kế hoạch và đầu tư đẩy nhanh tiến độ xây dựng 33</div><div class="ResourceInfo"><div class="provider">Hoang T.</div><a class="edit-res">Edit</a><a class="set-featured">Set as Featured</a><div class="featured">Featured</div></div></div></div><div class="resources ItemBox link" id="resource_item_20230154"><input class="data" value="" type="hidden" style="display:none"><div class="thumb"><a target="_blank" href="http://www.edmodo.com/link?id=7956052&url=http%3A//truonghuyhoang.com"></a><img src="/site_media/xino(1).php"></div><div id="resource_info" class="resource-info"><div class="title">HuyHoangCorp^^</div><a class="title" href="http://www.edmodo.com/link?id=7956052&url=http%3A//truonghuyhoang.com" target="_blank">HuyHoangCorp^^</a><a class="url" target="_blank" href="http://www.edmodo.com/link?id=7956052&url=http%3A//truonghuyhoang.com">http://truonghuyhoang.com</a><div class="desc"></div><div class="ResourceInfo"><div class="provider">Hoang T.</div><a class="edit-res">Edit</a><a class="set-featured">Set as Featured</a><div class="featured">Featured</div></div></div></div></div><img class="listbox-pin-wheel" src="/site_media/loading.gif" style="display: none; "></div><div class="pin-wheel" style="display: none; "></div><div class="more-resources" style="display: none; "><a>more</a></div></div></div></div><div class="no-sel-box">Select items on the left to show information about them here.</div><div></div><div class="col3-wrap"><div><div class="clearfix cf-all resources ResourcesInfoPanel"></div></div></div></div>
+            </div>
+            
+            <div id="footer">
+                <span>Edmodo ©2012 </span> |
+                <a href="http://about.edmodo.com/">About</a> <span>|</span>
+                <a href="http://blog.edmodo.com/" class="ft-blog">Blog</a> <span class="ft-blog">|</span>
+                <a href="http://help.edmodo.com/" class="ft-help">Help</a> <span class="ft-help">|</span>
+            
+                <a href="http://jobs.edmodo.com/">Jobs</a> <span>|</span>
+                <a href="http://contact.edmodo.com/">Contact</a> <span>|</span>
+                <a href="http://press.edmodo.com/">Press</a> <span>|</span>
+                <a href="http://www.edmodo.com/corporate/terms-of-service">Terms</a> <span>|</span>
+                <a href="http://www.edmodo.com/corporate/privacy-policy">Privacy</a> <span>|</span>
+                        <span>
+                        <a class="translate en" onclick="setNewLanguage(&#39;en&#39;)" title="View Edmodo in English"></a>
+                        <a class="translate es" onclick="setNewLanguage(&#39;es&#39;)" title="Ver Edmodo en Español"></a>
+                        <a class="translate pt" onclick="setNewLanguage(&#39;pt-br&#39;)" title="Ver Edmodo em Português"></a>
+                        <a class="translate de" onclick="setNewLanguage(&#39;de&#39;)" title="Edmodo in Deutsch"></a>
+                        <a class="translate el" onclick="setNewLanguage(&#39;el&#39;)" title="Edmodo in Greek"></a>
+                        <a class="translate fr" onclick="setNewLanguage(&#39;fr&#39;)" title="Edmodo in French"></a>
+                        </span>
+            </div>
+            
+            <script type="text/javascript">
+                _qoptions = { qacct: "p-3bPuajdKZphUs" };
+            </script>
+            
+            <script type="text/javascript" src="/site_media/quant.js"></script>
+            
+            <noscript>
+                &lt;a href="http://www.quantcast.com/p-3bPuajdKZphUs" target="_blank"&gt;
+                &lt;img src="http://pixel.quantserve.com/pixel/p-3bPuajdKZphUs.gif" style="display: none;" alt="Quantcast"&gt;
+                &lt;/a&gt;
+            </noscript>
+            
+            
+            
+            
+            
+            <div id="facebox" style="display:none;"><div class="popup"><table><tbody><tr><td class="tl"></td><td class="b"></td><td class="tr"></td></tr><tr><td class="bSide"></td><td class="body"><div class="header"><span class="title">Title</span><a href="http://www.edmodo.com/library/v2#" class="close">X</a><div class="clear" style="height:0px;"></div></div><div class="content"></div></td><td class="bSide"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></tbody></table></div></div></body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1"></span><object id="skype_plugin_object" location.href="http://www.edmodo.com/library/v2" location.hostname="www.edmodo.com" style="position: absolute; visibility: hidden; left: -100px; top: -100px; " width="0" height="0" type="application/x-vnd.skype.click2call.chrome.5.6.0"></object></html>
+                {% else %}
 		<p>Welcome anonymous user!
 		You need to <a href="/login/">login</a>
-		before you can store and share bookmarks.</p>
+        <!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        <!-- saved from url=(0070)http://www.edmodo.com/?language=en&auto_selected_lang=true&logout=true -->
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="keywords" content="microblogging, education 2.0, private groups, twitter, classroom 2.0, communication, parents, messaging, tools, students">
+        <meta name="description" content="Edmodo provides a safe and easy way for your class to connect and collaborate, share content, and access homework, grades and school notices. Our goal is to help educators harness the power of social media to customize the classroom for each and every learner">
+        <meta http-equiv="imagetoolbar" content="no">
+        <meta http-equiv="imagetoolbar" content="false">
+
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <title>Edmodo | Secure Social Learning Network for Teachers and Students</title>
+        <link rel="shortcut icon" href="http://www.edmodo.com/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/site_media/Home/general-v2.css">
+        <link rel="stylesheet" type="text/css" href="/site_media/Home/jquery.facebox.css">
+
+        <link href="/site_media/Home/landing-page-v2.css" media="screen" rel="stylesheet" type="text/css">
+        <script type="text/javascript" async="" src="/site_media/Home/ga.js"></script><script type="text/javascript" src="/site_media/Home/jquery.min.js"></script>
+        <script type="text/javascript" src="/site_media/Home/general.js"></script>
+        <script type="text/javascript" src="/site_media/Home/general-v2.js"></script>
+        <script type="text/javascript" src="/site_media/Home/jquery.facebox.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="/site_media/Home/core.min.css"><script type="text/javascript" src="/site_media/Home/core.min.js"></script>            <script type="text/javascript">
+            //------------------------------------------------------
+            // GLOBAL VARIABLES...
+            var logged_in = false, user_id =  null, user_type = "", user_name = '0',
+                    modo=modo||{}; modo.config=modo.config||{}; modo.config.gdocs=modo.config.gdocs||{};
+            modo.config.gdocs.FEATURE_ENABLED=0;
+
+            var GROUP='group';
+            var ASSIGNMENT='assignment';
+            var EDMODO_COLOR='#336699';
+            var SUPPORT_COLOR='#CC3333';
+            var EVERYONE_COLOR='#3265B0';
+            var PATH2_IMAGES='http://images.edmodo.com/images/';
+            var FILES_SERVER='http://s3.amazonaws.com';
+            var EDMODO_FILES_SERVER='http://s3.amazonaws.com/edmodo/';
+            var AVATAR_SERVER='http://s3.amazonaws.com/edmodo.userphotos/';
+            var NEW_AVATAR_SERVER='http://u.ph.edim.co/';
+            var DOC_THUMBS_PATH='http://s3.amazonaws.com/edmodo/docs/';
+            var UNIFIED_POST_TYPES='1';
+            var JS_DEV_STATE='2';
+            var REV='36473';
+            var MAX_SHOWN_FILENAME_LENGTH='50';
+            var IS_INST_SUBDOMAIN='';
+            var URL_KEY='index-index';
+            var MAX_CHAR_LENGTH_FOR_MESSAGES='587';
+            var MAX_LINE_BREAKS_FOR_MESSAGES='8';
+            var MAX_RECEIVERS_TO_SHOW='3';
+            var CROCODOC_FLOOR='0';
+            var CHAT_FEATURE='0';
+            var BROWSER_NAME='Chrome';
+            var BROWSER_NAME_VERSION='Chrome Generic';
+            var QUIZZES_ENABLED='1';
+            var EDMODO_SYSTEM_USER_ID='9';
+
+            translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['no_search_results'] = "There were no search results.";translated_text['searchAllTeachers'] = "Search All Teachers";translated_text['latest_posts'] = "Latest Posts";translated_text['search_posts'] = "Search Posts";translated_text['search-for-teachers'] = "Search Teachers";translated_text['COMMUNITY'] = "Community";translated_text['TEACHER'] = "Teacher";translated_text['STUDENT'] = "Student";translated_text['PUBLISHER'] = "Publisher";translated_text['PARENT'] = "Parent";translated_text['ADMINISTRATOR'] = "Administrator";translated_text['search'] = "Search";translated_text['school-code-no-colon'] = "School Code";translated_text['archived-groups'] = "Archived Groups";translated_text['title-goes-here'] = "Secure Social Learning Network for Teachers and Students";
+            if( !readCookie('ignoredHostChk') && URL_KEY != 'index-ie6' && getInternetExplorerVersion() == 6 )            document.location = '/index/ie6';
+
+            $j(function(){
+                        $j('a[rel*=facebox]').facebox(                    {
+                            faceboxHtml: '<div id="facebox" style="display:none;"><div class="popup"><table><tbody><tr><td class="tl"/><td class="b"/><td class="tr"/></tr><tr><td class="bSide"/><td class="body"><div class="header"><span class="title">Title</span><a href="#" class="close">X</a><div class="clear" style="height:0px;"></div></div><div class="content"></div></td><td class="bSide"/></tr><tr><td class="bl"/><td class="b"/><td class="br"/></tr></tbody></table></div></div>',
+                            opacity : '0.75',
+                            loadingImage : PATH2_IMAGES + 'loading.gif'
+                            //closeImage   : PATH2_IMAGES + 'facebox/closelabel.gif'
+                        });                $j('#grades-toggle').click(function()
+                        {
+                            $j('li.grades > div').toggleClass('clicked');
+                            $j('#grades-list').toggle();
+                        });
+                        $j(document).click(function(e){
+                            var target = $j(e.target);
+                            if ( !(target.attr('id') == 'grades-list' || target.attr('id') == 'grades-toggle' ) )
+                            {
+                                $j('li.grades > div').removeClass('clicked');
+                                $j('#grades-list').hide();
+                            }
+                        });
+                        $j('#display-archived-groups-for-gradebook').click(function(){
+                            $j.facebox( $j('#archived-group-list_tpl').html() );
+                            $j.facebox.setTitle( translated_text['archived-groups'] );
+                        });
+                    }
+            );
+        </script>
+
+        <script type="text/javascript">
+            //<!--
+            // SOME OTHER STUFF
+
+            translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['yes'] = "Yes";translated_text['no'] = "No";translated_text['more'] = "more";translated_text['less'] = "less";    translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['no-search-results'] = "Search did not find anything.";translated_text['wrong-extension'] = "You cannot select a $ext file. Try again...";translated_text['file-selected'] = "File selected: $file";translated_text['file-duplicated'] = "This file has already been selected: $file";translated_text['upload'] = "Upload";translated_text['to'] = "to";translated_text['single-date'] = "Single Date";translated_text['date-range'] = "Date Range";translated_text['date-format-err'] = "Date format should be MM\/DD\/YYYY.";translated_text['no-date-err'] = "No date selected.";translated_text['date-range-err'] = "Start date must be before end date.";    //-->
+        </script>
+
+
+        <script type="text/javascript">//<!--
+        $j(function(){
+            $j('#search-form') // Kill form default-behavour.
+                    .submit(function() {
+                        view.feed_handler.filterBySearch($j('#navSearch').val());
+                        return false;
+                    });
+        });
+        //--></script>
+        <!-- GA code -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-176270-4']);
+            _gaq.push(['_setDomainName', 'edmodo.com']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- END GA code -->
+        <script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/document_iterator.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/find_proxy.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/get_html_text.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/global_constants.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/name_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/number_injection_builder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/string_finder.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/change_sink.js"></script><meta name="document_iterator.js"><meta name="find_proxy.js"><meta name="get_html_text.js"><meta name="global_constants.js"><meta name="name_injection_builder.js"><meta name="number_injection_builder.js"><meta name="string_finder.js"><meta name="change_sink.js"><script type="text/javascript" src="/site_media/Home/g.js"></script></head>
+        <body class="lang-en">
+
+
+
+
+
+        <div id="content" class="clearfix">
+
+        <script type="text/javascript">
+
+            //Detect IE7 Compatibility mode in IE8
+
+            var regx = /MSIE 7.0/;
+
+            if(regx.test(navigator.userAgent) && document.documentMode){
+
+                if(document.documentMode == 8) $j('#content').addClass('ie8-compatibility');
+
+            }
+
+        </script>
+
+
+        <a name="skipMainNav"></a>
+
+
+
+        <!-- Errors and Success Bars -->
+        <div id="allow-cookies-error" style="display:none">
+            <div style="font-size:6px;color:#c00;margin-top:-8px">– Edmodo provides a safe and easy way for your class to connect and collaborate, share content, and access homework, grades and school notices. Our goal is to help educators harness the power of social media to customize the classroom for each and every learner</div>
+            <span><center style="font-weight:bold; font-size:20px;">Cookies Required</center>Cookies are not enabled on your browser. Please adjust this in your security preferences before continuing.</span>
+            <a onclick="$j(&#39;#allow-cookies-error&#39;).css(&#39;display&#39;, &#39;none&#39;);$j(&#39;#username&#39;).focus();">[hide]</a>
+        </div>
+
+        <div id="error" style="display:none">
+            <span>error-js</span>
+            <a onclick="$j(&#39;#error&#39;).css(&#39;display&#39;, &#39;none&#39;);$j(&#39;#username&#39;).focus();">[hide]</a>
+        </div>
+
+        <div id="fp-success">
+            <span id="new-pass-lbl">
+                Your <strong>new password</strong> has been sent to     </span>
+            <a onclick="$j(&#39;#fp-success&#39;).css(&#39;display&#39;, &#39;none&#39;);">[hide]</a>
+        </div>
+        <!-- End of Errors and Success Bars -->
+
+
+        <!-- Landing Page Content -->
+        <div id="landing">
+
+
+            <div id="edmodo-logo">
+                <img src="/site_media/Home/edmodo-logo.png">
+
+            </div>
+
+            <!-- Login Form -->
+
+
+            <form id="form_login" ation="." method="post"> {% csrf_token %}
+                /<div id="username-wrap">
+
+
+
+                    <span class="login-lbl">
+                        Username or Email	        </span>
+                    <input id="id_username" name="username" autocomplete="off" tabindex="1">
+                </div>
+                <div id="pwd-wrap">
+                    <span class="login-lbl">
+                        <a title="Forgot?">
+                            Forgot?	            </a>
+                        Password            </span>
+                    <input id="id_password" name="password" type="password" tabindex="2" autocomplete="off">
+                </div>
+                <input type="submit" id="login" name="login" value="Login" tabindex="3">
+                <input id="go2url" type="hidden" name="go2url" value="/">
+                <input id="language" type="hidden" name="selected_language" value="/">
+            </form>
+
+            <div id="avatar-stripe">
+                <div id="flying-images">
+                    <div id="signup-wrap">
+                        <div id="signup">
+                            <p>If you still don't have any account <br>  Sign up now.  It’s Free!</p>
+                            <div>
+                                <a href="/register/" title="Teacher Sign Up" class="btn teacher">Register</a>
+
+                                <span class="clear"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-pages">
+                <a href="http://blog.edmodo.com/">Blog</a>
+                <a href="http://www.edmodo.com/institutions?language=en">Schools &amp; Districts</a>
+                <a href="http://www.edmodo.com/mobile/">Mobile</a>
+                <a href="http://help.edmodo.com/">Help</a>
+            </div>
+
+        </div>
+        <!-- End of Landing Page Content -->
+
+        <!-- Slide Up Screen -->
+        <div id="learn-more" class="not-fixed">
+            <a id="slide-up">Learn more about Edmodo</a>
+            <a id="make" style="display:none;">Make your Classroom a Community</a>
+            <div id="more-screen" style="display:none;">
+                <div id="edmodo-video">
+                    <iframe width="606" height="341" src="/site_media/Home/saved_resource.htm" frameborder="0"></iframe>
+                </div>
+                <div id="learnboxes">
+                    <div><h3>Edmodo In Action</h3>
+                        <p>Edmodo is transforming the way that teachers and students connect, engage and learn both inside and outside the classroom. Check out our <a href="http://help.edmodo.com/edmodo-in-action/">Edmodo In Action</a> videos for examples of how its being used.</p></div>
+                    <div><h3>Attend a Webinar</h3>
+                        <p>Learn more about Edmodo by attending one of our weekly webinars:</p>
+                        <ul>
+                            <li style="padding:0 0 4px 0;"><a href="http://edmodointro-eorg.eventbrite.com/">Introduction to Edmodo</a></li>
+                            <li style="padding:0 0 4px 0;"><a href="http://edmodo20ways-eorg.eventbrite.com/">20 Ways to Use Edmodo</a></li>
+                            <li style="padding:0 0 4px 0;"><a href="http://edmodorollout-eorg.eventbrite.com/">Edmodo for Schools and Districts</a></li>
+                            <!--<li style="padding:0 0 4px 0;"><a href="http://edmodocarolina.eventbrite.com/">Intro to Edmodo: Exclusive California Edition 02-16-2012 4 PM  US/Eastern</a></li>
+               <li style="padding:0 0 4px 0;"><a href="http://edmodocarolina.eventbrite.com/">Edmodo North Carolina Spotlight 02-21-2012 2 PM  US/Eastern</a></li>-->
+                        </ul></div>
+                    <div><h3>Latest News</h3>
+                        <p><a href="http://blog.edmodo.com/2012/03/02/edmodo-webinar-schedule-march-2012/">Edmodo Webinar Schedule - March 2012</a></p>
+                        <p><a href="http://blog.edmodo.com/2012/02/28/edmodo-on-the-road-march-ed-tech-conference-schedule/">Edmodo on the Road: March Ed Tech Conference Schedule</a></p>
+                        <p><a href="http://blog.edmodo.com/2012/02/22/how-to-organize-group-posts-with-tags/">How to Organize Group Posts with Tags</a></p></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- End of Slide Up Screen -->
+
+
+
+        <!-- Sign Up Form -->
+
+
+
+
+
+        <!-- School/District Code Verification -->
+
+
+        </div>
+
+        <div id="footer">
+            <span>Edmodo ©2012 </span> |
+            <a href="http://about.edmodo.com/">About</a> <span>|</span>
+            <a href="http://blog.edmodo.com/" class="ft-blog">Blog</a> <span class="ft-blog">|</span>
+            <a href="http://help.edmodo.com/" class="ft-help">Help</a> <span class="ft-help">|</span>
+
+            <a href="http://jobs.edmodo.com/">Jobs</a> <span>|</span>
+            <a href="http://contact.edmodo.com/">Contact</a> <span>|</span>
+            <a href="http://press.edmodo.com/">Press</a> <span>|</span>
+            <a href="http://www.edmodo.com/corporate/terms-of-service">Terms</a> <span>|</span>
+            <a href="http://www.edmodo.com/corporate/privacy-policy">Privacy</a> <span>|</span>
+                    <span>
+                    <a class="translate en" onclick="setNewLanguage(;&#39;en&#39;)" title="View Edmodo in English"></a>
+                    <a class="translate es" onclick="setNewLanguage(&#39;es&#39;)" title="Ver Edmodo en Español"></a>
+                    <a class="translate pt" onclick="setNewLanguage(&#39;pt-br&#39;)" title="Ver Edmodo em Português"></a>
+                    <a class="translate de" onclick="setNewLanguage(&#39;de&#39;)" title="Edmodo in Deutsch"></a>
+                    <a class="translate el" onclick="setNewLanguage(&#39;el&#39;)" title="Edmodo in Greek"></a>
+                    <a class="translate fr" onclick="setNewLanguage(&#39;fr&#39;)" title="Edmodo in French"></a>
+                    </span>
+        </div>
+        /site_media/Home/
+        <script type="text/javascript">
+            _qoptions = { qacct: "p-3bPuajdKZphUs" };
+        </script>
+
+        <script type="text/javascript" src="/site_media/Home/quant.js"></script>
+
+        <noscript>
+            &lt;a href="http://www.quantcast.com/p-3bPuajdKZphUs" target="_blank"&gt;
+            &lt;img src="http://pixel.quantserve.com/pixel/p-3bPuajdKZphUs.gif" style="display: none;" alt="Quantcast"&gt;
+            &lt;/a&gt;
+        </noscript>
+
+
+
+
+
+        <div id="facebox" style="display:none;"><div class="popup"><table><tbody><tr><td class="tl"></td><td class="b"></td><td class="tr"></td></tr><tr><td class="bSide"></td><td class="body"><div class="header"><span class="title">Title</span><a href="http://www.edmodo.com/?language=en&auto_selected_lang=true&logout=true#" class="close">X</a><div class="clear" style="height:0px;"></div></div><div class="content"></div></td><td class="bSide"></td></tr><tr><td class="bl"></td><td class="b"></td><td class="br"></td></tr></tbody></table></div></div></body><span id="skype_highlighting_settings" display="none" autoextractnumbers="1"></span><object id="skype_plugin_object" location.href="http://www.edmodo.com/?language=en&amp;auto_selected_lang=true&amp;logout=true" location.hostname="www.edmodo.com" style="position: absolute; visibility: hidden; left: -100px; top: -100px; " width="0" height="0" type="application/x-vnd.skype.click2call.chrome.5.6.0"></object></html>
 	{% endif %}
 {% endblock %}

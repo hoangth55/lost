@@ -1,9 +1,257 @@
 {% extends "base.html" %}
 {% block title %}User Registration{% endblock %}
-{% block head %}User Registration{% endblock %}
+
 {% block content %}
-<form method="post" action="."> {% csrf_token %}
-	{{ form.as_p }}
-	<input type="submit" value="register" />
-</form>
+<!-- Landing Page Content -->
+    <link href="/site_media/Home/landing-page-v2.css" media="screen" rel="stylesheet" type="text/css">
+    <div id="landing">
+        <div id="edmodo-logo">
+            <head>User Registration</head>
+            <img src="/site_media/Home/edmodo-logo.png">
+        </div>
+        <div id="avatar-stripe">
+            <div id="signup-wrap">
+                <div id="signup">
+                    <p>Sign up now.  It’s Free!</p>
+                    <div>
+                        <a title="Teacher Sign Up" class="btn teacher">I’m a Teacher</a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+         </div>
+        <div id ="form_register">
+        <form method="post" action="."> {% csrf_token %}
+             {{ form.as_p }}
+             <input type="submit" value="Register" />
+        </form>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="/site_media/Home/index-index.js"></script>
+    <script type="text/javascript">
+        //<!--
+        var view;
+        $j(document).ready
+                (
+                        function()
+                        {
+                            view = new View();
+                            view.main();
+                        }
+                );
+        //-->
+    </script>
+    <script type="text/javascript" src="/site_media/Home/landing-page.js"></script>
+    <script type="text/javascript" src="/site_media/Home/Tab.js"></script>
+    <script type="text/javascript">
+        //<!--
+        $j(document).ready
+                (
+                        function()
+                        {
+                            view.landing_page = new LandingPage('REGULAR',true);
+                            view.landing_page.init();
+
+                            $j('#username').focus();
+
+                            if ($j.browser.webkit)
+                            {
+                                $j('input[name="password"]').attr('autocomplete', 'off');
+                                $j('input[name="username"]').attr('autocomplete', 'off');
+                            }
+
+                            if( navigator.userAgent.indexOf('Mac') != -1 )
+                            {
+                                $j('#landing .signup .teacher').css('padding-top', '10px');
+                                $j('#landing .signup .student').css('padding-top', '10px');
+                            }
+
+                            positionLearnMore();
+
+                            $j(window).resize(function(){positionLearnMore();});
+
+                            $j('#slide-up').click(function() {
+                                var window_height = '';
+
+                                if (!$j('#learn-more').hasClass('not-fixed')) {
+                                    var lm_offset = $j('#learn-more').offset();
+                                    $j('#learn-more').css('position', 'absolute');
+                                    $j('#learn-more').css('top', lm_offset.top);
+                                }
+                                window_height = $j(document).height();
+
+                                $j('#learn-more').animate({
+                                    height: (window_height + 5)+'px',
+                                    top: -5
+                                }, 700, function() {
+                                    $j('body,html').animate({
+                                        scrollTop: 0
+                                    }, 250);
+                                    $j('#learn-more').addClass('maximized');
+                                    $j('#more-screen').show();
+                                    $j('#slide-up').hide();
+                                    $j('#make').show();
+                                });
+                            });
+
+
+                            $j('#make').click(function() {
+                                $j('#learn-more').removeClass('maximized');
+                                $j('#more-screen').hide();
+                                $j('#make').hide();
+                                $j('#slide-up').show();
+                                var final_top = $j(document).height() - 151;
+                                if (final_top < 550) {
+                                    final_top = 550;
+                                }
+                                $j('#learn-more').animate({
+                                    top: final_top,
+                                    height: '50px'
+                                }, 700, function() {
+                                    $j('body,html').animate({
+                                        scrollTop: $j(document).height()
+                                    }, 1000);
+                                    positionLearnMore();
+                                });
+                            });
+
+                        }
+                );
+        translated_text = typeof(translated_text) == 'undefined' ? [] : translated_text;translated_text['tour'] = "Tour";translated_text['edmodo-features'] = "Edmodo Features";translated_text['what-is-edmodo'] = "What is Edmodo?";translated_text['error-1'] = "Username not found";translated_text['error-3'] = "Incorrect Username or Password";translated_text['error-5'] = "Incorrect School Code";translated_text['error-6'] = "Please access your school\/district subdomain";translated_text['error-7'] = "<center style=\"font-weight:bold; font-size:20px;\">Cookies Required<\/center>Cookies are not enabled on your browser. Please adjust this in your security preferences before continuing.";translated_text['error-8'] = "Incorrect Group Code";translated_text['group-code'] = "Group Code";translated_text['email'] = "Email Address";translated_text['school-code-no-colon'] = "School Code";translated_text['verify-school-code'] = "Verify School Code";translated_text['verify-group-code'] = "Verify Group Code";translated_text['google-sign-up'] = "Google Sign In";
+        function positionLearnMore() {
+            if ($j(window).height() > 870) {
+                if (!$j('#landing').hasClass('bigscreen')) {
+                    $j('#landing').addClass('bigscreen');
+                }
+            } else {
+                $j('#landing').removeClass('bigscreen');
+            }
+            if (! $j('#learn-more').hasClass('maximized')) {
+                $j('#learn-more').css('position', '');
+                $j('#learn-more').css('top', '');
+                if ($j(window).height() < 640) {
+                    if (! $j('#learn-more').hasClass('not-fixed')) {
+                        $j('#learn-more').addClass('not-fixed');
+                    }
+                } else {
+                    $j('#learn-more').removeClass('not-fixed');
+                }
+            } else {
+                $j('#learn-more').css('height', $j(document).height() - 50);
+            }
+        }
+        //-->
+    </script>
+
+    <div id="sign-up-form" style="display:none;">
+        <div class="an-error error" style="display:none;">An unknown error has occured. Please try again later.</div>
+        <form class="da-signup-form">
+            <input name="user-type" class="user-type" id="user-type" type="hidden" value="STUDENT">
+            <input type="hidden" value="en" name="language">
+            <input type="hidden" value="" name="referral">
+            <input type="hidden" value="" name="join">
+            <label for="group-code" class="student">Group Code: </label>
+            <input name="group-code" class="code group-code student" type="text">
+            <div class="group-code-status msgs-container">
+                <div class="required error" style="display:none;">required</div>
+                <div class="invalid error" style="display:none;">invalid code</div>
+                <div class="checking" style="display:none;">checking...</div>
+                <div class="valid success" style="display:none;">there you go</div>
+            </div>
+            <div class="clear"></div>
+            <label for="parent-code" class="parent">Parent Code: </label>
+            <input name="parent-code" class="code parent-code parent" type="text">
+            <div class="parent-code-status msgs-container">
+                <div class="required error" style="display:none;">required</div>
+                <div class="invalid error" style="display:none;">invalid code</div>
+                <div class="checking" style="display:none;">checking...</div>
+                <div class="valid success" style="display:none;">there you go</div>
+            </div>
+            <div class="clear"></div>
+            <label for="relation" class="parent">Relation: </label>
+            <select name="relation" class="parent relation">
+                <option value="MOM">Mom</option>
+                <option value="DAD">Dad</option>
+                <option value="OTHER">Other</option>
+            </select>
+            <div class="clear"></div>
+            <label for="parent-other" class="parent-other parent">Specify relation: </label>
+            <input name="parent-other" class="parent-other parent parent-other-relation" type="text">
+            <div class="parent-other-status msgs-container">
+                <div class="required error" style="display:none;">required</div>
+            </div>
+            <div class="clear"></div>
+            <label for="username">Username: </label>
+            <input class="username" name="username" maxlength="30" type="text" autocomplete="off">
+            <div class="username-status msgs-container">
+                <div class="required error" style="display:none;">must be 3+ chars</div>
+                <div class="taken error" style="display:none;">taken</div>
+                <div class="invalid error" style="display:none;">no spaces or funny letters</div>
+                <div class="checking" style="display:none;">checking...</div>
+                <div class="available success" style="display:none;">available</div>
+            </div>
+            <label for="password">Password: </label>
+            <input class="password" name="password" type="password" maxlength="32" autocomplete="off">
+            <div class="password-required error" style="display:none;">must be 4+ chars</div>
+            <label for="email">Email<span id="optional" class="student"> (opt)</span>: </label>
+            <input class="email" name="email" maxlength="50" type="text">
+            <div class="email-status msgs-container">
+                <div class="required error" style="display:none;">required</div>
+                <div class="taken error" style="display:none;">already exists</div>
+                <div class="invalid error" style="display:none;">not an email address</div>
+                <div class="checking" style="display:none;">checking...</div>
+                <div class="available success" style="display:none;">available</div>
+            </div>
+            <label for="title" class="teacher">Title: </label>
+            <select name="title" class="teacher title">
+                <option value="NONE">[ select ]</option>
+                <option value="MR">Mr.</option>
+                <option value="MRS">Mrs.</option>
+                <option value="MS">Ms.</option>
+                <option value="DR">Dr.</option>
+            </select>
+            <div class="clear"></div>
+            <label for="first-name">First Name: </label>
+            <input class="first-name" maxlength="35" name="first-name" type="text">
+            <div class="first-name-required error" style="display:none;">required</div>
+            <div class="first-name-invalid error" style="display:none;">this name is not available</div>
+            <label for="last-name">Last Name: </label>
+            <input class="last-name" name="last-name" type="text">
+            <div class="last-name-required error" maxlength="35" style="display:none;">required</div>
+            <div class="last-name-invalid error" style="display:none;">this name is not available</div>
+            <div class="clear"></div>
+        </form>
+        <div class="terms-of-service">
+            <span>You agree to our</span> <a target="_blank" href="http://www.edmodo.com/corporate/terms-of-service" title="Terms of Service">terms of service</a>.
+        </div>
+        <input type="submit" onclick="view.landing_page.validateFields();" value="Sign up" class="button sign-up nice-button">
+        <img class="go-loading" src="/site_media/Home/loading.gif" style="display:none;">
+    </div>
+
+
+    <!-- Forgotten Password -->
+
+    <div id="forgot-password-form" style="display:none;">
+        <div class="an-error error" style="display:none;">An unknown error has occured. Please try again later.</div>
+        <p>Enter your email address to have a new password sent out.</p>
+        <div class="fp-email-container">
+            <input class="email" name="email" maxlength="50" value="Email Address" type="text">
+            <input type="submit" class="button send-fp" value="Send">
+            <div class="email-status msgs-container">
+                <div class="required error">required</div>
+                <div class="doesnt-exist error">the email does not exist</div>
+                <div class="invalid error">not an email address</div>
+                <div class="checking">checking...</div>
+            </div>
+        </div>
+        <p class="student-notice"><strong>If you are a student</strong> and have not supplied Edmodo with an email address, ask one of your instructors to reset your password. </p>
+    </div>
+
 {% endblock %}

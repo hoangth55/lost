@@ -1,0 +1,61 @@
+.MultiFile-label > img
+{
+    height: 16px;
+    width: 16px;
+    background: url(http://images.edmodo.com/images/icons/txt.gif) no-repeat left top;
+    position:relative;
+    top: 3px;
+    margin: 0px 5px;
+}
+
+.MultiFile-label > a
+{
+    color: #CC0000;
+}
+
+.MultiFile-label > img.pdf
+{
+    background: url(http://images.edmodo.com/images/icons/pdf.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.doc
+{
+    background: url(http://images.edmodo.com/images/icons/doc.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.xls
+{
+    background: url(http://images.edmodo.com/images/icons/xls.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.ppt
+{
+    background: url(http://images.edmodo.com/images/icons/ppt.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.audio
+{
+    background: url(http://images.edmodo.com/images/icons/audio.png) no-repeat left top;
+}
+
+.MultiFile-label > img.video
+{
+    background: url(http://images.edmodo.com/images/icons/video.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.zip
+{
+    background: url(http://images.edmodo.com/images/icons/zip.gif) no-repeat left top;
+}
+
+.MultiFile-label > img.image
+{
+    background: url(http://images.edmodo.com/images/icons/image.gif) no-repeat left top;
+}
+
+/**** For the Files Partial ****/
+/*.MultiFile-label img
+{
+    max-height: 100px;
+    max-width: 100px;
+}*/

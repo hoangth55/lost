@@ -1,0 +1,605 @@
+body {
+    margin: 0;
+    background: url(/images/landing-v2/blue-bg-stripe.png) repeat-x top left;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    width: auto;
+}
+
+div#allow-cookies-error, div#error, div#fp-success {
+    background-color: #c00;
+    border-color: #C00;
+    border-style: solid;
+    border-width: 1px 0;
+    color: #FFF;
+    font-size: 15px;
+    left: 0;
+    padding: 7px 0;
+    text-align: center;
+    top: 36px;
+    width: 100%;
+    z-index: 4;
+}
+
+div#fp-success {
+    background: #2E8B57;
+    border-color: #3265B0;
+    display: none;
+    top: 0;
+}
+
+div#allow-cookies-error a, div#error a, div#fp-success a {
+    font-size: 11px;
+    color: #fff;
+    margin-left: 3px;
+}
+
+#edmodo-logo {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+    width: 488px;
+    padding-top: 10px;
+}
+
+#edmodo-logo img {
+    width: 488px;
+    height: 163px;
+    display: block;
+    margin-left: -17px;
+}
+
+#form_login {
+    width: 418px;
+    margin: 7px auto 0;
+}
+
+.lang-fr #form_login {
+    width: 448px;
+}
+
+.lang-el #form_login {
+    width: 438px;
+}
+
+#form_login #username-wrap, #form_login #pwd-wrap, #form_login #login {
+    float: left;
+}
+
+#form_login #username-wrap {
+    width: 200px;
+    padding-right: 10px;
+}
+
+#form_login #pwd-wrap {
+    width: 132px;
+}
+
+#form_login #username-wrap *, #form_login #pwd-wrap * {
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+#form_login .login-lbl {
+    margin-bottom: 3px;
+    font-size: 13px;
+}
+
+#form_login #pwd-wrap a {
+    float: right;
+    clear: none;
+    font-size: 11px;
+    width: auto;
+    margin-top: 2px;
+}
+
+#form_login #username, #form_login #password {
+    padding: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+}
+
+#form_login #username {
+    width: 186px;
+}
+
+#form_login #password {
+    width: 118px;
+}
+
+#form_login #login {
+    margin: 19px 0 0 10px;
+    padding: 7px 10px;
+    background: url(/images/backgrounds/button.png) repeat-x bottom left;
+    font-weight: bold;
+}
+
+#form_login #login {
+    margin-top: 19 px\9;
+    padding: 7px 10px 8 px\9;
+    *padding: 6px 10px;
+}
+
+#form_login #login:hover {
+    border-color: #000;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+#form_login #login:active {
+    border-color: #999;
+    text-decoration: none;
+    -moz-box-shadow: inset 0 5px 10px #999;
+    -webkit-box-shadow: inset 0 5px 10px #999;
+    box-shadow: inset 0 5px 10px #999;
+}
+
+@media screen and/*!*/(-webkit-min-device-pixel-ratio:0) {
+    #form_login #login {
+        padding-bottom: 8px;
+        margin-top: 18px;
+    }
+}
+
+#avatar-stripe {
+    height: 187px;
+    margin-top: 80px;
+    *margin-top: 20px;
+}
+
+#flying-images {
+    background: url(/images/landing-v2/flying-pics.jpg) no-repeat center center;
+    height: 187px;
+}
+
+#signup-wrap {
+    background: url(/images/landing-v2/sign-up-box-with-shadow.png) no-repeat scroll 24px 12px transparent;
+    height: 191px;
+    margin:0 auto;
+    padding-bottom: 20px;
+    width: 555px;
+}
+
+#form_register {
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 450px;
+
+}
+#signup {
+    clear: left;
+    width: 461px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    *padding-top: 35px;
+}
+
+#signup p {
+    font-size: 26px;
+    margin: 22px 0 25px;
+}
+
+#signup .btn {
+    padding: 10px 33px;
+    font-size: 17px;
+    background: url(/images/backgrounds/button.png) repeat-x bottom left;
+    font-weight: bold;
+    border: 1px solid #999;
+    color: #444;
+    border-radius: 3px;
+}
+
+#signup .btn {
+    padding: 10px 28px;
+}
+
+#signup .btn:hover {
+    border-color: #000;
+    text-decoration: none;
+    -moz-box-shadow: 3px 3px 3px #ccc;
+    -webkit-box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+#signup .btn:active {
+    border-color: #999;
+    text-decoration: none;
+    -moz-box-shadow: inset 0 5px 10px #999;
+    -webkit-box-shadow: inset 0 5px 10px #999;
+    box-shadow: inset 0 5px 10px #999;
+}
+
+#signup .btn.teacher {
+    margin-right: 7px;
+}
+
+#signup .btn.student {
+    margin-left: 7px;
+}
+
+#signup #parent-signup {
+    margin-top: 23px;
+}
+
+#signup #parent-signup a {
+    font-weight: bold;
+}
+
+#signup #subdomain-name {
+    font-size: 14px;
+    margin: 15px 0 0;
+}
+
+#signup #subdomain-name span {
+    background: #369;
+    color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 0 5px;
+}
+
+#signup #create-account {
+    font-size: 22px;
+    margin: 5px 0 25px;
+}
+
+#main-pages {
+    text-align: center;
+    font-size: 17px;
+    margin: 25px 0 10px;
+}
+
+#main-pages a {
+    margin: 0 10px;
+}
+
+#landing.bigscreen #main-pages {
+    margin: 75px auto 0;
+    height: 50px;
+    background: url(/images/landing-v2/main-links-bg.png) no-repeat center top;
+    padding-top: 160px;
+    width: 720px;
+}
+
+#landing.bigscreen #main-pages a {
+    margin: 0;
+    display: block;
+    float: left;
+    width: 180px;
+}
+
+#landing.bigscreen #avatar-stripe {
+    margin-top: 95px;
+}
+
+#learn-more, #learn-more.force-fixed {
+    width: 100%;
+    background: url(/images/landing-v2/blue-bg-stripe-tab.png) repeat-x left top #4A76BD;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 30px 0 25px 0;
+}
+
+#learn-more.not-fixed {
+    bottom: auto;
+    top: 550px;
+    position: absolute;
+}
+
+#learn-more>a {
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0 10px 70px;
+}
+
+#learn-more>a#slide-up {
+    background: url(/images/landing-v2/learn-play-white.png) no-repeat 0 10px;
+}
+
+#learn-more>a#make {
+    background: url(/images/landing-v2/learn-down-white.png) no-repeat 0 10px;
+}
+
+#more-screen {
+    background: url("/images/backgrounds/grey-texture.png") repeat scroll 0 0 transparent;
+    width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #444;
+    -moz-box-shadow: 5px 5px 15px #222;
+    -webkit-box-shadow: 5px 5px 15px #222;
+    box-shadow: 5px 5px 15px #222;
+}
+
+#more-screen #learnboxes {
+    margin-top: 15px;
+}
+
+#more-screen #learnboxes div {
+    width: 230px;
+    height: 150px;
+    float: left;
+    border: 1px solid #999;
+    background: #fff;
+    text-align: left;
+    padding: 8px;
+    margin-left: 15px;
+    -moz-box-shadow: inset 0 5px 10px #eee;
+    -webkit-box-shadow: inset 0 5px 10px #eee;
+    box-shadow: inset 0 5px 10px #eee;
+}
+
+#more-screen #learnboxes h3 {
+    color: #444;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #ddd;
+    margin-bottom: 8px;
+}
+
+#more-screen #learnboxes p {
+    margin-bottom: 8px;
+}
+
+#more-screen #learnboxes p img {
+    display: block;
+    margin: 0 auto;
+}
+
+form.da-signup-form {
+    padding-bottom: 20px;
+    width: 400px;
+    overflow: hidden;
+}
+
+form.da-signup-form>*, form.da-google-signup-form, form.gfc-signup-form>* {
+    margin-top: 10px;
+}
+
+form.da-signup-form>label, form.da-google-signup-form>label, form.gfc-signup-form>label {
+    float: left;
+    display: block;
+    text-align: right;
+    padding: 5px;
+    width: 110px;
+    clear: left;
+}
+
+form.da-signup-form>select.teacher {
+    margin-top: 12px;
+}
+
+form.da-signup-form>input, form.da-signup-form>select, form.da-google-signup-form>input, form.gfc-signup-form>select {
+    float: left;
+    font-size: 13px;
+}
+
+form.da-signup-form>select, form.gfc-signup-form>select {
+    margin-bottom: 0;
+    height: 29px;
+}
+
+form.da-signup-form>input, form.da-google-signup-form>input {
+    width: 230px;
+}
+
+form.da-signup-form>input.error, form.da-google-signup-form>input.error {
+    border: 1px solid #c00;
+}
+
+form.da-signup-form>div.clear, form.da-google-signup-form>div.clear {
+    height: 0;
+    margin: 0;
+}
+
+div.msgs-container {
+    padding-left: 120px;
+    margin: 0;
+    width: 195px;
+    clear: both;
+}
+
+div.error, div.password-required {
+    background-color: #c00;
+    color: #fff;
+    padding-left: 4px;
+}
+
+div.last-name-required, div.first-name-required, div.password-required, div.terms-of-service, div.first-name-invalid, div.last-name-invalid {
+    margin-left: 120px;
+    width: 185px;
+    clear: both;
+    margin-top: 0;
+}
+
+form.da-signup-form>div.email-admin {
+    float: left;
+    clear: left;
+    font-size: 11px;
+    margin: 3px 0 3px 120px;
+    width: 230px;
+}
+
+form.da-signup-form>div.email-admin>a {
+    text-decoration: underline;
+}
+
+form.da-signup-form>input.code {
+    width: 100px;
+}
+
+div.group-code-status {
+    width: 90px;
+}
+
+div.success {
+    background-color: #3265B0;
+    color: #fff;
+    padding-left: 4px;
+}
+
+div.terms-of-service, .gfc-terms {
+    font-size: 11px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+input.sign-up {
+    margin: 15px 0;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div#TB_ajaxContent {
+    color: #666;
+}
+
+#facebox img.go-loading {
+    display: block;
+    margin: 15px auto 0;
+}
+
+div.an-error {
+    padding: 5px;
+    text-align: center;
+}
+
+div#forgot-password-form {
+    width: 410px;
+    padding: 5px;
+}
+
+div#forgot-password-form>div.fp-email-container {
+    padding: 10px 0;
+}
+
+div#forgot-password-form>.student-notice {
+    font-size: 11px;
+}
+
+div#forgot-password-form input.email {
+    font-size: 18px;
+    width: 280px;
+}
+
+div#forgot-password-form div.msgs-container {
+    padding: 0;
+    position: relative;
+    top: -1px;
+}
+
+div#forgot-password-form input[type=submit] {
+    padding: 5.5px 10px;
+}
+
+div.msgs-container>* {
+    display: none;
+}
+
+#code-verification {
+    padding: 0 15px;
+}
+
+#code-verification input.code-verification-input {
+    font-size: 16px;
+    width: 230px;
+    margin: 0 5px 0 0;
+    height: 22px;
+}
+
+#code-verification div.msgs-container {
+    padding: 0;
+    position: relative;
+    top: -1px;
+}
+
+#code-verification div.msgs-container div.error {
+    width: 230px;
+}
+
+#code-verification input[type=submit] {
+    font-size: 16px;
+}
+
+#code-verification div.email-admin-login {
+    font-size: 11px;
+    margin: 3px 0;
+}
+
+#footer .ft-communities {
+    display: none;
+}
+
+#footer .ft-blog {
+    display: none;
+}
+
+#footer .ft-help {
+    display: none;
+}
+
+#subdomain-selector {
+    background: #000;
+    border-bottom: 3px solid #444;
+    padding: 5px 0 0;
+    height: 37px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#subdomain-selector div {
+    width: 202px;
+    margin: 0 auto;
+    float: none;
+}
+
+#subdomain-selector * {
+    float: left;
+}
+
+#subdomain-selector span {
+    padding: 9px 4px 9px 7px;
+    background: #666;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+#subdomain-selector input {
+    padding: 7px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-left: 0;
+    width: 60px;
+}
+
+#subdomain-selector a {
+    background: url(/images/backgrounds/button.png) repeat-x bottom left;
+    font-weight: bold;
+    border: 1px solid #999;
+    padding: 8px 11px;
+    color: #444;
+    margin-left: 3px;
+}
+
+#subdomain-selector a:hover {
+    border-color: #000;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px #444;
+}
+
+#subdomain-selector a:active {
+    box-shadow: inset 0 5px 10px #999;
+}

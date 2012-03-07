@@ -5,3 +5,13 @@
 input {
 	display: block;
 }
+
+#re {
+    clear: left;
+    font-size: 40px;
+    color: red;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    *padding-top: 35px;
+}
