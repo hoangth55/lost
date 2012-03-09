@@ -170,7 +170,7 @@ div#allow-cookies-error a, div#error a, div#fp-success a {
 #form_register {
     text-align: left;
     margin: 0 auto;
-    margin-left: 450px;
+    margin-left: 470px;
 
 }
 #signup {
@@ -413,6 +413,11 @@ div.error, div.password-required {
     background-color: #c00;
     color: #fff;
     padding-left: 4px;
+}
+div.password-invalid {
+    padding-left: 4px;
+    color: red;
+    font-size: 16px;
 }
 
 div.last-name-required, div.first-name-required, div.password-required, div.terms-of-service, div.first-name-invalid, div.last-name-invalid {

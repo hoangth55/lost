@@ -27,9 +27,35 @@ def logout_page(request):
 	return HttpResponseRedirect('/')
 	
 def main_page(request):
-	return render_to_response(
-		'main_page.html', RequestContext(request)
-	)
+    """
+
+    """
+    global state
+    state = '..........'
+
+    if request.method == 'POST':
+        form = loginPage(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(username = username, password = password)
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                    return HttpResponseRedirect('/')
+            else:
+                state ='Username and passowrd didn\'t match. Please try again.!'
+                return render_to_response('main_page.html', RequestContext(request,{'state':state}))
+    else:
+        form = loginPage()
+
+    variables = RequestContext(request, {
+        'Main_form': form,
+    })
+
+    return render_to_response(
+	    'main_page.html', variables)
+
 
 def user_page(request, username):
 	try:
@@ -55,9 +81,9 @@ def register_page(request):
 			return HttpResponseRedirect('/register/success/')
 	else:
 		form = RegistrationForm()
-	variables = RequestContext(request, { 
-		'form': form
-	})
+	variables = RequestContext(request, {
+        'Res_form': form
+    })
 	return render_to_response(
 		'registration/register.html', 
 		variables
@@ -93,7 +119,7 @@ def bookmark_save_page(request):
     else:
         form = BookmarkSaveForm()
     variables = RequestContext(request, {
-	    'form': form
+	    'Save_form': form
     })
     return render_to_response('bookmark_save.html', variables)
 

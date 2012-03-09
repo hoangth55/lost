@@ -9,26 +9,15 @@
             <head>User Registration</head>
             <img src="/site_media/Home/edmodo-logo.png">
         </div>
-        <div id="avatar-stripe">
-            <div id="signup-wrap">
-                <div id="signup">
-                    <p>Sign up now.  It’s Free!</p>
-                    <div>
-                        <a title="Teacher Sign Up" class="btn teacher">I’m a Teacher</a>
-
-                    </div>
 
 
-                </div>
 
-            </div>
-
-         </div>
         <div id ="form_register">
-        <form method="post" action="."> {% csrf_token %}
-             {{ form.as_p }}
-             <input type="submit" value="Register" />
-        </form>
+            <p>Sign up now.  It’s Free!</p>
+            <form method="post" action="."> {% csrf_token %}
+                 {{ Res_form.as_p }}
+                 <input type="submit" value="Register" />
+            </form>
         </div>
     </div>
 
@@ -236,22 +225,5 @@
     </div>
 
 
-    <!-- Forgotten Password -->
-
-    <div id="forgot-password-form" style="display:none;">
-        <div class="an-error error" style="display:none;">An unknown error has occured. Please try again later.</div>
-        <p>Enter your email address to have a new password sent out.</p>
-        <div class="fp-email-container">
-            <input class="email" name="email" maxlength="50" value="Email Address" type="text">
-            <input type="submit" class="button send-fp" value="Send">
-            <div class="email-status msgs-container">
-                <div class="required error">required</div>
-                <div class="doesnt-exist error">the email does not exist</div>
-                <div class="invalid error">not an email address</div>
-                <div class="checking">checking...</div>
-            </div>
-        </div>
-        <p class="student-notice"><strong>If you are a student</strong> and have not supplied Edmodo with an email address, ask one of your instructors to reset your password. </p>
-    </div>
 
 {% endblock %}

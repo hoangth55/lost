@@ -2,6 +2,7 @@ __author__ = 'Paradise'
 from django import forms
 import re
 from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
 
 class RegistrationForm(forms.Form):
     username = forms.CharField(label =u'Username', max_length=30)
@@ -46,3 +47,9 @@ class BookmarkSaveForm(forms.Form):
 		required=False,
 		widget=forms.TextInput(attrs={'size': 64})
 	)
+class loginPage(forms.Form):
+    username = forms.CharField(label =u'Username', max_length=30)
+    password = forms.CharField(
+        label=u'Password',
+        widget=forms.PasswordInput()
+    )
